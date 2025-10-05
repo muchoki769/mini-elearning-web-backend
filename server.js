@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors(
   {
   origin: [
-    'https://mini-elearning-web-frontend.vercel.app/',
+    'https://mini-elearning-web-frontend.vercel.app',
     'http://localhost:5173'
   ], 
   credentials: true,
@@ -23,6 +23,7 @@ app.use(cors(
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
   }
 ));
+
 app.use(express.json());
 app.use(helmet({}));
 
